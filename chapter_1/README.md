@@ -17,13 +17,13 @@ $ rustc main.rs
 ## Cargo
 
 - Cargo is Rust’s build system and package manager. It does few things for you, such as building your code, downloading the libraries your code depends on, and building those libraries
-- In Rust, packages of code are referred to as `crates`
+- In Rust, packages of code are referred to as `crates`. https://crates.io/ is the Rust's crate registry.
 - Cargo expects your source files to live inside the `src` directory
 - `Cargo.lock` is a file that keeps track of the exact versions of dependencies in your project
 
 ### Cargo commands
 
-- We can create a project using `cargo new <project_name>`.  The command creates a new directory and project with the name you pass to it. Passing `--gcs=git` to it will initialize a git, `--gcs=none` will make sure there is no version control.
+- We can create a project using `cargo new <project_name>`.  The command creates a new directory and project with the name you pass to it. Passing `--vcs=git` to it will initialize a git, `--vcs=none` will make sure there is no version control.
 - We can build a project using `cargo build`. It creates an executable file in `target/debug/<project>` rather than in your current directory.
 - We can build and run a project in one step using `cargo run`. It compiles the code and then runs the resultant executable all in one command.
 - We can build a project without producing a binary to check for errors using `cargo check`.
