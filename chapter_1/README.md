@@ -2,7 +2,8 @@
 
 ## Basics 
 
-- First, Rust style is to indent with four spaces, not a tab.
+- Rust is a statically typed language, which means that it must know the types of all variables at compile time 
+- Rust style is to indent with four spaces, not a tab.
 - using a "!" in `println!` means that you’re calling a macro instead of a normal function
 - Most lines of Rust code end with a semicolon.
 - Before running a Rust program, you must compile it using the Rust compiler and use `rustc` command by passing it the name of your source file, like this:
